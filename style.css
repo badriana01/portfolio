@@ -1,0 +1,273 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}  										/* tag bintang untuk memberi semua trmasuk body */
+		/* batas dan batas dalam dan dekorasi text dihilangkan */
+
+body{
+	margin: 0;								/*batas kiri kanan atas bawah */
+	padding: 0;								/*batas dalam kiri kanan atas bawah */
+	font-family: 'open sans', sans-serif;	 /*gaya huruf */
+}
+		/* batas dan batas dalamdan haya huruf biody */
+
+nav{
+	top: 0;								/* atas  */
+	width: 100%;						/* besar navigasi */
+	margin: auto;						/* batas nya otomstis */
+	display: flex;
+	line-height: 80px;
+	position: sticky;					/*  menu nya tetap berada di atas*/
+	position: -webkit-sticky;			/* untuk web safary */
+	background: #ffffff;
+	z-index: 1;
+}
+		/* yang di perlukan  besar nav - menu menempel kw aras */
+
+.warper{
+	width: 1100px;							/*lebar navigasi*/
+	margin: auto;							/* batas nya otomatis */
+	position: relative;						/* posisi Margin kiri dan kanan diatur ke auto */
+}
+.logo a{
+	font-size: 50px;						/* ukuran hurf  */
+	font-weight: 700;						/* extensi huruf  */
+	float: left;							/* mengambung kekiri  */
+	font-family: courier;					/* font keluarga atau gaya huruuf  */
+	color: #3C5186;							/* warna hruf */
+}
+.menu{
+	float: right;							/* mengembung ke kanan  */
+}
+
+nav ul{
+	list-style-type: none;					/* menghilangkan titik ul */
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li{
+	float: left;
+}
+nav ul li a{
+	color: #2B2B2B;
+	padding: 0px 16px 0px 16px;				/* atas 0 - kanan 16 - bawah 0 - kiri 16*/
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}
+nav ul li a:hover{
+	text-decoration: underline;
+
+}
+.tbl-biru{
+	background: #3C5186;
+	padding: 5px;
+	color: white;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.tbl-biru:hover{
+	background: #FAFF00;
+	color:black;
+	text-decoration: none;
+}
+section{
+	margin: auto;
+	display: flex;
+	margin-bottom: 50px;
+
+}
+.kolom{
+	margin-top: 50px;
+	margin-bottom:50px;
+
+}
+h2{
+	font-family: 'comic sans ms';
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	width: 100%;
+	line-height: 50px;
+	color: #0F044C;	
+}
+.kolom .deskrisi{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'comic sans ms';
+
+}
+p{
+	font-family: 'comic sans ms';
+	font-size: 15px;
+	margin-bottom: 10px;
+	color: #0F044C;
+
+}
+.tbl-kuning{
+	margin-top: 10px;
+	padding: 5px;
+	background: yellow;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	font-family: 'comic sans ms';
+	
+}
+.tbl-kuning:hover{
+	background:#3C5186 ;
+	color: white;
+}
+ 
+.tengah{
+	text-align: center;
+	width: 100%;
+}
+.tutor-list{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.kartu-tutor{
+	width: 20%;
+	border-radius: 50%;
+	margin: 0px 20px 0px 20px;
+	text-align: center;
+	margin: auto;
+}
+.kartu-tutor img{
+	border-radius:50% ;
+	width: 80%;
+}
+.paralax{
+	background: white;
+}
+
+
+.footer{
+	text-align: center;
+	background: darkblue;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+.footer p{
+	color: white;
+	line-height: 50px;
+}
+
+#contac{
+	background:#bebcc9 ;
+	padding: 70px 0px 70px 0px;
+}
+
+.foter{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.footer-section{
+	width: 20%;
+	margin: 0 auto;
+}
+h3{
+	font-family: 'comic sans ms';
+	color: #0F044C;
+	font-size: 20x;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-section{
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	transition: transform 300ms;
+}
+.footer-section:hover{
+	transform: scale(1.1);
+	box-shadow: 5px 6px 8px rgb(0 0 0 / 50%);
+}
+
+
+@media screen and (max-width:991.98px) {
+
+	.warper{
+		width: 90%;
+		
+
+	}
+	.logo a {
+		display: block;
+		text-align: center;
+		width: 100%;
+		font-size: 20px;
+			
+	}
+
+	nav .menu{
+		width: 100%;
+		margin: 0;
+
+	}
+
+	nav .menu ul{
+		text-align: center;
+		margin: 0;
+		line-height: 35px;
+		
+		
+	}
+
+	nav .menu ul li {
+		display: inline-block;
+		float: none;
+	}
+
+
+	section{
+		display: block;
+	}
+	section img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.kartu-tutor{
+		width: 50%;
+		text-align: center;
+	}
+
+	.kartu-patner{
+		width: 50%;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
